@@ -53,13 +53,14 @@ class ResultsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             QuestionsSummary(summaryData),
+            const SizedBox(height: 30),
             TextButton.icon(
               onPressed: () {
                 restartQuiz();
               },
               style: TextButton.styleFrom(foregroundColor: Colors.white),
               label: const Text("Restart Quiz!"),
-              icon: const Icon(Icons.arrow_back_rounded),
+              icon: const Icon(Icons.refresh),
             ),
           ],
         ),
